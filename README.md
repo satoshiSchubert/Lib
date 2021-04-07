@@ -1,0 +1,2 @@
+# coscolib
+ My library
