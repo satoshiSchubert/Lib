@@ -1,2 +1,2 @@
-# coscolib
- My library
+# coscoLib
+ My library :D
