@@ -7,7 +7,7 @@ import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
-#>>>>>>>>>>Ques1>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>>>>>>>>
 def unpad(array,width):
     return array[width:-width,width:-width]
 
@@ -76,22 +76,6 @@ axarr[2][0].title.set_text("open operation")
 axarr[2][0].imshow(openOp(raw,kernel))
 axarr[2][1].title.set_text("close operation")
 axarr[2][1].imshow(closeOp(raw,kernel))
-#<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-#>>>>>>>>>Ques2>>>>>>>>>>>>
-src = cv2.imread("Fig0911(a)(noisy_fingerprint).tif")
-kernel_2 = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
-kernel_6 = cv2.getStructuringElement(cv2.MORPH_RECT, (6, 6))
-dst = cv2.erode(src,kernel_2)
-dst = cv2.dilate(dst,kernel_6)
-dst = cv2.erode(src,kernel_2)
-plt.figure()
-plt.imshow(dst)
-#<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-
-
-
 #<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
